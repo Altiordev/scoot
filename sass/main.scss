@@ -1,0 +1,58 @@
+@import './fonts';
+@import './variables';
+@import './mixins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    min-height: 100%;
+}
+
+body {
+    font-family: $text-font;
+}
+
+.big-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1164px;
+    margin: 0 auto;
+    padding: 0px 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+}
+
+.btn {
+    padding: 14px 39px;
+    font-family: $heading-font;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 167%;
+    color: #FFFFFF;
+    // style
+    background: #FCB72B;
+    border: none;
+    cursor: pointer;
+}
+
+@import './blocks/blocks'
