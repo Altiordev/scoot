@@ -5,14 +5,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+
     <title>scoot</title>
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
 
+    <header>
 
+        <nav>
+            <div class="container">
+                <div class="nav">
+                    <div class="mobil-menu">
+                        <span class="mobil-menu__item"></span>
+                        <span class="mobil-menu__item"></span>
+                        <span class="mobil-menu__item"></span>
+                    </div>
+
+                    <a class="nav__logo" href="./index.html"><img src="./images/icon/logo-black.svg" alt="logo"></a>
+
+                    <div class="menu">
+                        <ul class="menu__ul">
+                            <li class="menu__ul-item">
+                                <a class="menu__ul-link" href="./html/about.html">About</a>
+                            </li>
+                            <li class="menu__ul-item">
+                                <a class="menu__ul-link" href="#">Location</a>
+                            </li>
+                            <li class="menu__ul-item">
+                                <a class="menu__ul-link" href="./html/careers.html">Careers</a>
+                            </li>
+                        </ul>
+
+                        <button class="btn">Get Scootin</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-big-container big-container">
+                <div class="hero-container container">
+                    <div class="hero__text">
+                        <h1 class="hero__text-title">Scooter sharing made simple</h1>
+
+                        <div class="hero-element-text">
+                            <div class="hero-element-left"></div>
+
+                            <div class="hero__text-info">
+                                <p class="hero__text-info__text">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+
+                                <button class="btn">Get Scootin</button>
+                            </div>
+                            <!-- <picture class="hero-element-right">
+                                <source media="(max-width:1040px)" srcset="./images/icon/icon-strelka-hero-tablet.svg">
+
+                                <img class="hero-element-right-eski" src="./images/icon/icon-strelka-hero-desktop.svg" alt="element" style="width:auto;">
+                            </picture> -->
+                            <img class="hero-element-right" src="./images/icon/icon-strelka-hero-desktop.svg" alt="element">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="main-sec-1">
+            <div class="container">
+                <div class="main-cards">
+                    <hr class="behind-card-element">
+                    <div class="main-cards__card">
+                        <div class="main-cards__card-img">
+                            <img src="./images/icon/icon-app.svg" alt="phones-app">
+                        </div>
+
+                        <div class="main-cards__card-text">
+                            <h3>Locate with app</h3>
+                            <p>Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.</p>
+                        </div>
+                    </div>
+
+                    <div class="main-cards__card">
+                        <div class="main-cards__card-img">
+                            <img src="./images/icon/icon-scooter.svg" alt="phones-app">
+                        </div>
+
+                        <div class="main-cards__card-text">
+                            <h3>Pick your scooter</h3>
+                            <p>We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.</p>
+                        </div>
+                    </div>
+
+                    <div class="main-cards__card">
+                        <div class="main-cards__card-img-hr main-cards__card-img">
+                            <img src="./images/icon/icon-moto.svg" alt="phones-app">
+                        </div>
+
+                        <div class="main-cards__card-text">
+                            <h3>Enjoy the ride</h3>
+                            <p>Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-sec-2">
+            <article class="sec-2 telemtry">
+                <div class="telemtry-big-container big-container">
+                    <div class="sec-2__container telemtry__container container">
+                        <div class="sec-2__text telemtry__text">
+                            <h2 class="sec-2__text-h telemtry__text-h">Easy to use riding telemetry</h2>
+
+                            <p class="sec-2__text-p telemtry__text-p">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
+
+                            <div>
+                                <button class="btn">Learn More</button>
+                            </div>
+                        </div>
+
+                        <div class="telemtry__element">
+                            <div class="sec-2__img telemtry__img">
+                                <img src="./images/main-page/section-2-1.png" alt="person">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sec-2 city">
+                <div class="big-container">
+                    <div class="sec-2__container city__container container">
+                        <div class="sec-2__img city__img">
+                            <img src="./images/main-page/section-2-2.png" alt="person">
+                        </div>
+
+                        <div class="sec-2__text city__text">
+                            <h2 class="sec-2__text-h city__text-h">Coming to a city near you</h2>
+
+                            <p class="sec-2__text-p city__text-p">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
+
+                            <div>
+                                <button class="btn">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sec-2 payments">
+                <div class="big-container">
+                    <div class="sec-2__container payments__container container">
+                        <div class="sec-2__text payments__text">
+                            <h2 class="sec-2__text-h payments__text-h">Zero hassle payments</h2>
+
+                            <p class="sec-2__text-p payments__text-p">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
+
+                            <div>
+                                <button class="btn">Learn More</button>
+                            </div>
+                        </div>
+
+                        <div class="sec-2__img payments__img">
+                            <img src="./images/main-page/section-2-3.png" alt="person">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <article class="footer__top">
+            <div class="big-container">
+                <div class="footer__top-container container">
+                    <div class="footer__text">
+                        <h2>Sign up and Scoot off today</h2>
+                    </div>
+
+                    <div class="footer__market">
+                        <a class="market app-store" href="https://www.apple.com/ru/app-store/" target="_blank">
+                            <img class="market__logo" src="./images/icon/icon-apple.svg" alt="app-store">
+
+                            <div class="market__text">
+                                <span>Available on the</span>
+                                <p>AppStore</p>
+                            </div>
+                        </a>
+
+                        <a class="market play-market" href="https://play.google.com/" target="_blank">
+                            <img class="market__logo" src="./images/icon/icon-playmarket.svg" alt="app-store">
+
+                            <div class="market__text">
+                                <span>Get it on</span>
+                                <p>GooglePlay</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="footer__bottom">
+            <div class="footer__bottom-container container">
+                <a href="./index.html"><img src="./images/icon/logo-scoot-white.svg" alt=""></a>
+
+                <div class="footer-menu">
+                    <ul class="footer-menu__ul">
+                        <li class="footer-menu__ul-item">
+                            <a class="footer-menu__ul-link" href="./html/about.html">About</a>
+                        </li>
+                        <li class="footer-menu__ul-item">
+                            <a class="footer-menu__ul-link" href="#bottom">Location</a>
+                        </li>
+                        <li class="footer-menu__ul-item">
+                            <a class="footer-menu__ul-link" href="./html/careers.html">Careers</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer-menu__socials">
+                        <a href="https://www.facebook.com/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z" fill="#FCB72B"/>
+                            </svg>
+                            </a>
+
+                        <a href="https://www.instagram.com/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM5.838 12C5.838 8.597 8.597 5.838 12 5.838C15.403 5.838 18.162 8.597 18.162 12C18.162 15.404 15.403 18.163 12 18.163C8.597 18.163 5.838 15.403 5.838 12ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM16.965 5.595C16.965 4.8 17.61 4.155 18.406 4.155C19.201 4.155 19.845 4.8 19.845 5.595C19.845 6.39 19.201 7.035 18.406 7.035C17.61 7.035 16.965 6.39 16.965 5.595Z" fill="#FCB72B"/>
+                            </svg>
+                            </a>
+
+                        <a href="https://twitter.com/home"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 2.557C23.117 2.949 22.168 3.213 21.172 3.332C22.189 2.723 22.97 1.758 23.337 0.608001C22.386 1.172 21.332 1.582 20.21 1.803C19.313 0.846001 18.032 0.248001 16.616 0.248001C13.437 0.248001 11.101 3.214 11.819 6.293C7.728 6.088 4.1 4.128 1.671 1.149C0.381 3.362 1.002 6.257 3.194 7.723C2.388 7.697 1.628 7.476 0.965 7.107C0.911 9.388 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.106C22.505 4.411 23.34 3.544 24 2.557Z" fill="#FCB72B"/>
+                            </svg>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer>
+
+    <script src="./js/main.js"></script>
 
 </body>
 

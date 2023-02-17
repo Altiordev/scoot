@@ -1,0 +1,190 @@
+.main-sec-2 {
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 160px;
+    @include for-tablet {
+        padding-top: 145px;
+        padding-bottom: 104px;
+        row-gap: 128px;
+    }
+}
+
+.sec-2 {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include for-tablet {
+            flex-direction: column;
+            row-gap: 56px;
+        }
+    }
+    &__text {
+        max-width: 445px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        &-h {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+            letter-spacing: -2.14286px;
+            color: $dark-navy-color;
+            @include for-mobile {
+                font-size: 32px;
+                letter-spacing: -1.42857px;
+            }
+            @include for-fold {
+                font-size: 24px;
+            }
+        }
+        &-p {
+            margin-top: 24px;
+            margin-bottom: 40px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 167%;
+            color: $dim-grey-color;
+            @include for-tablet {
+                margin: 40px 0;
+            }
+            @include for-mobile {
+                margin: 32px 0;
+            }
+            @include for-fold {
+                font-size: 22px;
+            }
+        }
+        @include for-tablet {
+            max-width: 573px;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    &__img {
+        max-width: 445px;
+        max-height: 445px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            max-width: 445px;
+            max-height: 445px;
+            object-fit: contain;
+            object-position: center;
+            transition: .3s ease-in;
+            @include for-mobile {
+                max-width: 311px;
+                max-height: 311px;
+            }
+            @include for-fold {
+                max-width: 250px;
+                max-height: 250px;
+            }
+        }
+        &:hover img {
+            transform: scale(1.2);
+        }
+        @include for-tablet {
+            order: -1;
+        }
+        @include for-mobile {
+            max-width: 311px;
+            max-height: 311px;
+        }
+        @include for-fold {
+            max-width: 250px;
+            max-height: 250px;
+        }
+    }
+}
+
+// .telemtry-big-container {
+//     position: relative;
+// }
+// .telemtry-big-container::before {
+//     content: '';
+//     background: url(../../images/main-page/section-2-1-yoni.png) no-repeat;
+//     width: 102px;
+//     height: 445px;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     z-index: -1;
+// }
+// .telemtry-big-container::after {
+//     content: '';
+//     background: url(../../images/icon/section-2-strelka-1.svg) no-repeat;
+//     width: 740px;
+//     height: 150px;
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+// }
+// 
+// 
+.telemtry__element {
+    position: relative;
+}
+
+.telemtry__element::before {
+    content: '';
+    background: url(../../images/main-page/section-2-1-yoni.png) no-repeat;
+    width: 102px;
+    height: 445px;
+    position: absolute;
+    top: 0;
+    right: -175px;
+    z-index: -1;
+    @include for-element-3 {
+        right: -70px;
+    }
+    @include for-element-3-1 {
+        right: -40px;
+    }
+    @include for-tablet {
+        right: -210px;
+    }
+    @include for-element-3-4 {
+        right: -170px;
+    }
+    @include for-mobile {
+        display: none;
+    }
+}
+
+.telemtry__element::after {
+    content: '';
+    background: url(../../images/icon/section-2-strelka-1.svg) no-repeat;
+    width: 740px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: -175px;
+    @include for-element-3 {
+        right: -70px;
+    }
+    @include for-element-3-1 {
+        right: -40px;
+    }
+    @include for-tablet {
+        right: -210px;
+    }
+    @include for-element-3-4 {
+        right: -170px;
+    }
+    @include for-mobile {
+        width: 300px;
+        right: -198px;
+    }
+    @include for-element-3-2 {
+        right: -93px;
+    }
+    @include for-element-3-3 {
+        right: -19px;
+    }
+    @include for-min-fold {
+        width: 210px;
+        right: -20px;
+    }
+}
