@@ -1,0 +1,107 @@
+.hero-big-container {
+    background: url(../../images/main-page/desktop-hero-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include for-mobile {
+        background-position: right;
+    }
+}
+
+.hero-element-text {
+    position: relative;
+}
+
+.hero__text {
+    display: flex;
+    row-gap: 40px;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: flex-end;
+    color: #FFF;
+    &-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 100%;
+        letter-spacing: -2.5px;
+        @include for-mobile {
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: -1.78571px;
+        }
+    }
+    &-info {
+        max-width: 405px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: flex-start;
+        &__text {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        @include for-element {
+            max-width: 573px;
+            align-items: center;
+            row-gap: 32px;
+        }
+        @include for-mobile {
+            max-width: 311px;
+            row-gap: 24px;
+        }
+    }
+    @include for-element {
+        max-width: 573px;
+        text-align: center;
+        align-items: center;
+        row-gap: 24px;
+    }
+    @include for-mobile {
+        max-width: 311px;
+        row-gap: 34px;
+    }
+}
+
+.hero-container {
+    padding-top: 153px;
+    padding-bottom: 153px;
+    @include for-element {
+        padding-top: 137px;
+        padding-bottom: 217px;
+        display: flex;
+        justify-content: center;
+    }
+    @include for-mobile {
+        padding-top: 115px;
+        padding-bottom: 179px;
+    }
+}
+
+.hero-element-left {
+    position: absolute;
+    top: 40px;
+    left: -265px;
+    display: inline-block;
+    width: 202.5px;
+    height: 15px;
+    background-color: $yellow-color;
+    border: none;
+    @include for-element {
+        display: none;
+    }
+}
+
+.hero-element-right {
+    position: absolute;
+    top: 40px;
+    right: -500px;
+    @include for-element {
+        top: 207px;
+        left: -294px;
+    }
+    @include for-mobile {
+        top: 210px;
+        left: -380px;
+    }
+}
