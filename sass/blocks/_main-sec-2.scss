@@ -4,9 +4,8 @@
     flex-direction: column;
     row-gap: 160px;
     @include for-tablet {
-        padding-top: 145px;
-        padding-bottom: 104px;
-        row-gap: 128px;
+        padding: 100px 0;
+        row-gap: 75px;
     }
 }
 

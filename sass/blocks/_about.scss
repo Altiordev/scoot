@@ -44,6 +44,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 171px;
+    @include for-tablet {
+        row-gap: 58px;
+    }
 }
 
 .about-sec-1-article {
@@ -206,6 +209,9 @@
 
 .about-sec-2 {
     padding-top: 120px;
+    @include for-tablet {
+        padding-top: 45px;
+    }
 }
 
 .values {
@@ -289,7 +295,7 @@
             }
         }
         @include for-tablet {
-            margin-top: 105px;
+            margin-top: 45px;
             row-gap: 55px;
             flex-direction: column;
         }
@@ -307,6 +313,9 @@
 .about-sec-3 {
     padding-top: 120px;
     padding-bottom: 160px;
+    @include for-tablet {
+        padding: 75px 0;
+    }
 }
 
 .faqs {
