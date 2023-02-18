@@ -16,6 +16,7 @@ body {
 
 main {
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -39,6 +40,10 @@ body {
     @include for-mobile {
         padding-top: 76.39px;
     }
+}
+
+body.lock {
+    overflow: hidden;
 }
 
 h1,

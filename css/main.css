@@ -15,6 +15,7 @@ body {
 
 main {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -40,6 +41,10 @@ body {
   .hero {
     padding-top: 76.39px;
   }
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 h1,
@@ -246,6 +251,7 @@ nav {
   line-height: 120%;
   letter-spacing: -0.892857px;
   color: #495567;
+  transition: 0.2s ease;
 }
 .footer__market .market__text span {
   font-size: 10px;
@@ -322,7 +328,7 @@ nav {
 }
 .footer__top .big-container {
   padding: 102px 0;
-  background: url("../../images/main-page/footer-element.png") no-repeat;
+  background: url("../images/main-page/footer-element.png") no-repeat;
   background-size: 1000px;
   background-position: right bottom;
 }
@@ -371,8 +377,20 @@ nav {
   }
 }
 
+.market .market__logo path {
+  transition: 0.2s ease;
+}
+
+.market:hover .market__text {
+  color: #FCB72B;
+}
+
+.market:hover .market__logo path {
+  fill: #FCB72B;
+}
+
 .hero-big-container {
-  background: url(../../images/main-page/desktop-hero-img.jpg) no-repeat;
+  background: url(../images/main-page/desktop-hero-img.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -801,10 +819,15 @@ nav {
 .telemtry__element {
   position: relative;
 }
+@media screen and (max-width: 1000px) {
+  .telemtry__element {
+    order: -1;
+  }
+}
 
 .telemtry__element::before {
   content: "";
-  background: url(../../images/main-page/section-2-1-yoni.png) no-repeat;
+  background: url(../images/main-page/section-2-1-yoni.png) no-repeat;
   width: 102px;
   height: 445px;
   position: absolute;
@@ -840,7 +863,7 @@ nav {
 
 .telemtry__element::after {
   content: "";
-  background: url(../../images/icon/section-2-strelka-1.svg) no-repeat;
+  background: url(../images/icon/section-2-strelka-1.svg) no-repeat;
   width: 740px;
   height: 150px;
   position: absolute;
@@ -887,5 +910,358 @@ nav {
   .telemtry__element::after {
     width: 210px;
     right: -20px;
+  }
+}
+
+.careers-hero {
+  padding-top: 101.85px;
+}
+@media screen and (max-width: 710px) {
+  .careers-hero {
+    padding-top: 76.2px;
+  }
+}
+
+.careers--big-container-hero {
+  background: url(../images/careers-page/careers-hero.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 1000px) {
+  .careers--big-container-hero {
+    background-position: right;
+  }
+}
+@media screen and (max-width: 710px) {
+  .careers--big-container-hero {
+    background-position: center;
+  }
+}
+
+.careers--container-hero {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.careers--container-hero h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 710px) {
+  .careers--container-hero h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .careers--container-hero {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60 px;
+  }
+}
+
+.mission {
+  padding-top: 120px;
+}
+.mission--big-container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .mission--big-container {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 64px;
+  }
+}
+.mission--container {
+  display: flex;
+  justify-content: center;
+}
+.mission__text {
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mission__text h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+@media screen and (max-width: 710px) {
+  .mission__text h2 {
+    font-size: 32px;
+    letter-spacing: -1.42857px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mission__text h2 {
+    font-size: 24px;
+  }
+}
+.mission__text p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  color: #939CAA;
+}
+@media screen and (max-width: 1000px) {
+  .mission__text p {
+    margin: 40px 0;
+  }
+}
+@media screen and (max-width: 710px) {
+  .mission__text p {
+    margin: 32px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mission__text p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mission__text {
+    max-width: 573px;
+    text-align: center;
+  }
+}
+.mission__img {
+  max-width: 100%;
+}
+@media screen and (max-width: 1223px) {
+  .mission__img {
+    width: 600px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mission__img {
+    width: 800px;
+    order: -1;
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width: 853px) {
+  .mission__img {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .mission__img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mission__img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .mission__img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mission {
+    padding-top: 144px;
+  }
+}
+
+.careers-sec-2 {
+  padding-top: 120px;
+}
+
+.join-us__title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+@media screen and (max-width: 375px) {
+  .join-us__title {
+    font-size: 30px;
+  }
+}
+.join-us__cards {
+  margin-top: 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join-us__cards-card {
+  max-width: 350px;
+  display: flex;
+  row-gap: 87px;
+  flex-direction: column;
+  align-items: center;
+}
+.join-us__cards-card__img {
+  position: relative;
+}
+.join-us__cards-card__img img {
+  filter: blur(2px);
+  transition: 0.1s linear;
+}
+.join-us__cards-card__img:hover img {
+  filter: blur(0);
+}
+.join-us__cards-card__img::after {
+  content: "01";
+  position: absolute;
+  bottom: -20%;
+  left: 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #FCB72B;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  color: #495567;
+}
+.join-us__cards-card__text {
+  display: flex;
+  row-gap: 27px;
+  flex-direction: column;
+  align-items: center;
+}
+.join-us__cards-card__text h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.join-us__cards-card__text P {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  text-align: center;
+  color: #939CAA;
+}
+@media screen and (max-width: 1000px) {
+  .join-us__cards-card {
+    max-width: 457px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .join-us__cards {
+    margin-top: 105px;
+    row-gap: 55px;
+    flex-direction: column;
+  }
+}
+
+.join-us__cards-card__img--2::after {
+  content: "02";
+}
+
+.join-us__cards-card__img--3::after {
+  content: "03";
+}
+
+.careers-sec-3 {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.apply__cards {
+  max-width: 100%;
+  display: flex;
+  row-gap: 24px;
+  flex-direction: column;
+}
+.apply__cards-card {
+  width: 100%;
+  height: 128px;
+  background-color: #F2F5F9;
+  padding: 32px 64px 35px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s linear;
+}
+.apply__cards-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 37px -6px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1000px) {
+  .apply__cards-card:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+.apply__cards-card__text {
+  max-width: 650px;
+  display: flex;
+  row-gap: 8px;
+  flex-direction: column;
+  color: #495567;
+}
+.apply__cards-card__text h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -1.07143px;
+}
+.apply__cards-card__text span {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+}
+@media screen and (max-width: 710px) {
+  .apply__cards-card__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 710px) {
+  .apply__cards-card {
+    height: 100%;
+    background-color: #F2F5F9;
+    padding: 36px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.apply__btn {
+  padding: 14px 67px;
+}
+@media screen and (max-width: 375px) {
+  .apply__btn {
+    padding: 14px 40px;
   }
 }/*# sourceMappingURL=main.css.map */
