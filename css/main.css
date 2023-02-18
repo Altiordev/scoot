@@ -297,7 +297,7 @@ nav {
          column-gap: 12.86px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 710px) {
   .footer__market {
     flex-direction: column;
     row-gap: 10px;
