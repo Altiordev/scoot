@@ -1,12 +1,12 @@
-.careers-hero {
+.about-hero {
     padding-top: 101.85px;
     @include for-mobile {
         padding-top: 76.2px;
     }
 }
 
-.careers--big-container-hero {
-    background: url(../images/careers-page/careers-hero.jpg) no-repeat;
+.about--big-container-hero {
+    background: url(../images/about-page/about-hero.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     @include for-tablet {
@@ -17,7 +17,7 @@
     }
 }
 
-.careers--container-hero {
+.about--container-hero {
     padding-top: 72px;
     padding-bottom: 72px;
     h1 {
@@ -35,31 +35,33 @@
         display: flex;
         justify-content: center;
         padding-top: 60px;
-        padding-bottom: 60 px;
+        padding-bottom: 60px;
     }
 }
 
-.mission {
+.about-sec-1 {
     padding-top: 120px;
-    &--big-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 171px;
+}
+
+.about-sec-1-article {
+    &__container {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         @include for-tablet {
             flex-direction: column;
-            justify-content: center;
-            row-gap: 64px;
+            row-gap: 56px;
         }
-    }
-    &--container {
-        display: flex;
-        justify-content: center;
     }
     &__text {
         max-width: 445px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        h2 {
+        &-h {
             font-weight: 700;
             font-size: 48px;
             line-height: 100%;
@@ -73,7 +75,7 @@
                 font-size: 24px;
             }
         }
-        p {
+        &-p {
             margin-top: 24px;
             margin-bottom: 40px;
             font-weight: 400;
@@ -87,56 +89,126 @@
                 margin: 32px 0;
             }
             @include for-fold {
-                font-size: 18px;
+                font-size: 22px;
             }
         }
         @include for-tablet {
             max-width: 573px;
+            justify-content: center;
             text-align: center;
         }
     }
     &__img {
-        // position: relative;
-        max-width: 100%;
-        @include for-element-3-1 {
-            width: 600px;
+        max-width: 445px;
+        max-height: 445px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            max-width: 445px;
+            max-height: 445px;
             object-fit: contain;
             object-position: center;
+            transition: .3s ease-in;
+            @include for-mobile {
+                max-width: 311px;
+                max-height: 311px;
+            }
+            @include for-fold {
+                max-width: 250px;
+                max-height: 250px;
+            }
+        }
+        &:hover img {
+            transform: scale(1.2);
         }
         @include for-tablet {
-            width: 800px;
             order: -1;
-            align-self: flex-end;
-        }
-        @include for-element-3-4 {
-            width: 690px;
         }
         @include for-mobile {
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+            max-width: 311px;
+            max-height: 311px;
         }
         @include for-fold {
-            height: 250px;
+            max-width: 250px;
+            max-height: 250px;
         }
-        @include for-min-fold {
-            height: 200px;
-        }
-    }
-    @include for-tablet {
-        padding-top: 144px;
     }
 }
 
-.careers-sec-2 {
+.mobility__element {
+    position: relative;
+    @include for-tablet {
+        order: -1;
+    }
+}
+
+.mobility__element::before {
+    content: '';
+    background: url(../images/main-page/section-2-1-yoni.png) no-repeat;
+    width: 102px;
+    height: 445px;
+    position: absolute;
+    top: 0;
+    right: -175px;
+    z-index: -1;
+    @include for-element-3 {
+        right: -70px;
+    }
+    @include for-element-3-1 {
+        right: -40px;
+    }
+    @include for-tablet {
+        right: -210px;
+    }
+    @include for-element-3-4 {
+        right: -170px;
+    }
+    @include for-mobile {
+        display: none;
+    }
+}
+
+.mobility__element::after {
+    content: '';
+    background: url(../images/icon/section-2-strelka-1.svg) no-repeat;
+    width: 740px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: -175px;
+    @include for-element-3 {
+        right: -70px;
+    }
+    @include for-element-3-1 {
+        right: -40px;
+    }
+    @include for-tablet {
+        right: -210px;
+    }
+    @include for-element-3-4 {
+        right: -170px;
+    }
+    @include for-mobile {
+        width: 300px;
+        right: -198px;
+    }
+    @include for-element-3-2 {
+        right: -93px;
+    }
+    @include for-element-3-3 {
+        right: -19px;
+    }
+    @include for-min-fold {
+        width: 210px;
+        right: -20px;
+    }
+}
+
+.about-sec-2 {
     padding-top: 120px;
 }
 
-.join-us {
+.values {
     &__title {
         margin: 0 auto;
         font-weight: 700;
@@ -163,7 +235,7 @@
             &__img {
                 position: relative;
                 img {
-                    filter: blur(2px);
+                    filter: blur(4px);
                     transition: .1s linear;
                     @include for-tablet {
                         filter: blur(0);
@@ -224,79 +296,93 @@
     }
 }
 
-.join-us__cards-card__img--2::after {
+.values__cards-card__img--2::after {
     content: '02';
 }
 
-.join-us__cards-card__img--3::after {
+.values__cards-card__img--3::after {
     content: '03';
 }
 
-.careers-sec-3 {
+.about-sec-3 {
     padding-top: 120px;
     padding-bottom: 160px;
 }
 
-.apply__cards {
-    max-width: 100%;
-    display: flex;
-    row-gap: 24px;
-    flex-direction: column;
-    &-card {
-        width: 100%;
-        height: 128px;
-        background-color: #F2F5F9;
-        padding: 32px 64px 35px 40px;
+.faqs {
+    &--container {
         display: flex;
+        row-gap: 64px;
+        flex-direction: column;
         align-items: center;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -2.14286px;
+        color: $dark-navy-color;
+    }
+}
+
+.howworks {
+    width: 100%;
+    &--container {
+        display: flex;
         justify-content: space-between;
-        transition: .2s linear;
-        &:hover {
-            transform: scale(1.1);
-            box-shadow: 0px 0px 37px -6px rgba(0, 0, 0, 0.2);
-            @include for-tablet {
-                transform: scale(1);
-                box-shadow: none;
-            }
-        }
-        &__text {
-            max-width: 650px;
-            display: flex;
-            row-gap: 8px;
+        @include for-mobile {
             flex-direction: column;
-            color: $dark-navy-color;
-            h3 {
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: -1.78571px;
+        color: $dark-navy-color;
+        @include for-mobile {
+            font-size: 24px;
+            letter-spacing: -1.07143px;
+            margin-bottom: 32px;
+        }
+    }
+    &__cards {
+        width: 720px;
+        display: flex;
+        row-gap: 16px;
+        flex-direction: column;
+        align-items: center;
+        &-card {
+            width: 100%;
+            height: 100%;
+            background-color: #F2F5F9;
+            padding: 32px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__title {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 117%;
                 letter-spacing: -1.07143px;
-            }
-            span {
-                text-transform: capitalize;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 167%;
+                color: $dark-navy-color;
+                @include for-mobile {
+                    font-size: 18px;
+                    line-height: 133%;
+                    letter-spacing: -0.803571px;
+                }
             }
             @include for-mobile {
-                text-align: center;
+                column-gap: 16px;
             }
         }
         @include for-mobile {
-            height: 100%;
-            background-color: #F2F5F9;
-            padding: 36px 32px 32px 32px;
-            display: flex;
-            flex-direction: column;
-            row-gap: 16px;
-            align-items: center;
-            justify-content: center;
+            max-width: 100%;
         }
     }
-}
-
-.apply__btn {
-    padding: 14px 67px;
-    @include for-fold {
-        padding: 14px 40px;
+    &-img {
+        cursor: pointer;
     }
 }

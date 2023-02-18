@@ -24,6 +24,32 @@ body {
     overflow-x: hidden;
 }
 
+::-moz-selection {
+    color: #fff;
+    background: $yellow-color;
+}
+
+ ::selection {
+    color: #fff;
+    background: $yellow-color;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(252, 183, 43, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $yellow-color;
+}
+
 .big-container {
     max-width: 1440px;
     margin: 0 auto;
