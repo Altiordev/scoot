@@ -14,6 +14,6 @@ document.querySelectorAll(".hero, .careers-hero, .about-hero, main, footer").for
     "click", () => {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-
+        body.classList.remove('lock');
     }
 ))
