@@ -51,6 +51,8 @@
                 }
             }
             @include for-tablet {
+                width: 173px;
+                justify-content: center;
                 column-gap: 8.64px;
                 padding: 8.3px 11.79px 6.43px 11.79px;
             }
@@ -99,7 +101,7 @@
         }
         @include for-mobile {
             flex-direction: column;
-            row-gap: 85px;
+            row-gap: 41.44px;
         }
     }
 }
@@ -139,8 +141,7 @@
         column-gap: 58.58px;
         align-items: center;
         @include for-mobile {
-            padding-top: 64px;
-            padding-bottom: 88px;
+            padding: 64px 0;
             flex-direction: column;
             justify-content: center;
             align-items: center;

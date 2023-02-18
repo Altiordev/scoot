@@ -128,7 +128,7 @@
         }
     }
     @include for-tablet {
-        padding-top: 144px;
+        padding-top: 72px;
     }
 }
 
@@ -217,7 +217,7 @@
             }
         }
         @include for-tablet {
-            margin-top: 105px;
+            margin-top: 70px;
             row-gap: 55px;
             flex-direction: column;
         }
@@ -235,6 +235,9 @@
 .careers-sec-3 {
     padding-top: 120px;
     padding-bottom: 160px;
+    @include for-tablet {
+        padding: 100px 0;
+    }
 }
 
 .apply__cards {
