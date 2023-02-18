@@ -43,6 +43,7 @@
                 line-height: 120%;
                 letter-spacing: -0.892857px;
                 color: $dark-navy-color;
+                transition: .2s ease;
                 span {
                     font-size: 10px;
                     line-height: 15px;
@@ -107,7 +108,7 @@
     background-color: $dark-navy-color;
     .big-container {
         padding: 102px 0;
-        background: url('../../images/main-page/footer-element.png') no-repeat;
+        background: url('../images/main-page/footer-element.png') no-repeat;
         background-size: 1000px;
         background-position: right bottom;
         @include for-tablet {
@@ -146,4 +147,16 @@
             row-gap: 41.44px;
         }
     }
+}
+
+.market .market__logo path {
+    transition: .2s ease;
+}
+
+.market:hover .market__text {
+    color: $yellow-color;
+}
+
+.market:hover .market__logo path {
+    fill: $yellow-color;
 }

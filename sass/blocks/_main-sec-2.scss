@@ -125,11 +125,14 @@
 // 
 .telemtry__element {
     position: relative;
+    @include for-tablet {
+        order: -1;
+    }
 }
 
 .telemtry__element::before {
     content: '';
-    background: url(../../images/main-page/section-2-1-yoni.png) no-repeat;
+    background: url(../images/main-page/section-2-1-yoni.png) no-repeat;
     width: 102px;
     height: 445px;
     position: absolute;
@@ -155,7 +158,7 @@
 
 .telemtry__element::after {
     content: '';
-    background: url(../../images/icon/section-2-strelka-1.svg) no-repeat;
+    background: url(../images/icon/section-2-strelka-1.svg) no-repeat;
     width: 740px;
     height: 150px;
     position: absolute;

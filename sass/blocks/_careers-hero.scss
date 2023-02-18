@@ -1,0 +1,299 @@
+.careers-hero {
+    padding-top: 101.85px;
+    @include for-mobile {
+        padding-top: 76.2px;
+    }
+}
+
+.careers--big-container-hero {
+    background: url(../images/careers-page/careers-hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include for-tablet {
+        background-position: right;
+    }
+    @include for-mobile {
+        background-position: center;
+    }
+}
+
+.careers--container-hero {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    h1 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 100%;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        @include for-mobile {
+            font-size: 40px;
+        }
+    }
+    @include for-mobile {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 60 px;
+    }
+}
+
+.mission {
+    padding-top: 120px;
+    &--big-container {
+        display: flex;
+        align-items: center;
+        @include for-tablet {
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 64px;
+        }
+    }
+    &--container {
+        display: flex;
+        justify-content: center;
+    }
+    &__text {
+        max-width: 445px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        h2 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+            letter-spacing: -2.14286px;
+            color: $dark-navy-color;
+            @include for-mobile {
+                font-size: 32px;
+                letter-spacing: -1.42857px;
+            }
+            @include for-fold {
+                font-size: 24px;
+            }
+        }
+        p {
+            margin-top: 24px;
+            margin-bottom: 40px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 167%;
+            color: $dim-grey-color;
+            @include for-tablet {
+                margin: 40px 0;
+            }
+            @include for-mobile {
+                margin: 32px 0;
+            }
+            @include for-fold {
+                font-size: 18px;
+            }
+        }
+        @include for-tablet {
+            max-width: 573px;
+            text-align: center;
+        }
+    }
+    &__img {
+        // position: relative;
+        max-width: 100%;
+        @include for-element-3-1 {
+            width: 600px;
+            object-fit: contain;
+            object-position: center;
+        }
+        @include for-tablet {
+            width: 800px;
+            order: -1;
+            align-self: flex-end;
+        }
+        @include for-element-3-4 {
+            width: 690px;
+        }
+        @include for-mobile {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        @include for-fold {
+            height: 250px;
+        }
+        @include for-min-fold {
+            height: 200px;
+        }
+    }
+    @include for-tablet {
+        padding-top: 144px;
+    }
+}
+
+.careers-sec-2 {
+    padding-top: 120px;
+}
+
+.join-us {
+    &__title {
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: -2.14286px;
+        color: $dark-navy-color;
+        @include for-fold {
+            font-size: 30px;
+        }
+    }
+    &__cards {
+        margin-top: 103px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-card {
+            max-width: 350px;
+            display: flex;
+            row-gap: 87px;
+            flex-direction: column;
+            align-items: center;
+            &__img {
+                position: relative;
+                img {
+                    filter: blur(2px);
+                    transition: .1s linear;
+                }
+                &:hover img {
+                    filter: blur(0);
+                }
+                &::after {
+                    content: '01';
+                    position: absolute;
+                    bottom: -20%;
+                    left: 29%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 96px;
+                    height: 96px;
+                    border-radius: 50%;
+                    background-color: $yellow-color;
+                    font-family: $heading-font;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 117%;
+                    color: $dark-navy-color;
+                }
+            }
+            &__text {
+                display: flex;
+                row-gap: 27px;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 117%;
+                    text-align: center;
+                    letter-spacing: -1.07143px;
+                    color: $dark-navy-color;
+                }
+                P {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 167%;
+                    text-align: center;
+                    color: $dim-grey-color;
+                }
+            }
+            @include for-tablet {
+                max-width: 457px;
+            }
+        }
+        @include for-tablet {
+            margin-top: 105px;
+            row-gap: 55px;
+            flex-direction: column;
+        }
+    }
+}
+
+.join-us__cards-card__img--2::after {
+    content: '02';
+}
+
+.join-us__cards-card__img--3::after {
+    content: '03';
+}
+
+.careers-sec-3 {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.apply__cards {
+    max-width: 100%;
+    display: flex;
+    row-gap: 24px;
+    flex-direction: column;
+    &-card {
+        width: 100%;
+        height: 128px;
+        background-color: #F2F5F9;
+        padding: 32px 64px 35px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .2s linear;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 37px -6px rgba(0, 0, 0, 0.2);
+            @include for-tablet {
+                transform: scale(1);
+                box-shadow: none;
+            }
+        }
+        &__text {
+            max-width: 650px;
+            display: flex;
+            row-gap: 8px;
+            flex-direction: column;
+            color: $dark-navy-color;
+            h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 117%;
+                letter-spacing: -1.07143px;
+            }
+            span {
+                text-transform: capitalize;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 167%;
+            }
+            @include for-mobile {
+                text-align: center;
+            }
+        }
+        @include for-mobile {
+            height: 100%;
+            background-color: #F2F5F9;
+            padding: 36px 32px 32px 32px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.apply__btn {
+    padding: 14px 67px;
+    @include for-fold {
+        padding: 14px 40px;
+    }
+}
